@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.jfif" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/8dd41fcb54.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Trust'N'Ride</title>
+</head>
+<body>
+    <header class="header">
+            <!-- Navigations -->
+            <nav class="nav">
+                <div class="nav-container">
+                    <div class="logo">
+                        <p>Trust'N'Ride <span> <i class="fa-solid fa-car"></i></span></p>
+                    </div>
+                    <!-- Links -->
+                        <ul class="first-li">
+                         <li><a href="#">Lend A Car</a></li>
+                         <li><a href="#">Ride A Car</a></li>
+                         <li><a href="#">Buy A Car</a></li>
+                        </ul>
+
+                        <ul class="second-li">
+                            <li><a href="#" class="btn-light">Login</a></li>
+                            <li><a href="#" class="btn-dark ">Sign-Up</a></li>
+                        </ul>
+
+                        <!-- Hamburger Menu -->
+                    <div class="hamburger">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                        <!-- Hamburger Menu Ends -->
+                </div>
+            </nav>
+
+            <!-- Mobile- Menu -->
+            <div class="mobile-menu hidden no-scroll" id="menu">
+                <!-- links -->
+                <ul class="car-links">
+                    <li><a href="#">Lend A Car</a></li>
+                    <li><a href="#">Ride A Car</a></li>
+                    <li><a href="#">Buy A Car</a></li>
+                </ul>
+
+                <ul class="sign-up">
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Sign-Up</a></li>
+                </ul>
+            </div>
+            <!-- Hero -->
+                <div class="hero">
+                    <p class="hero-text" id="header-text">Unlock your next adventure with our <span class="premium">premium </span> car rentals</p>
+
+                    <!-- image -->
+                    <img src="img/2015 bentley.jpg" alt="Bentley" class="hero-img" loading="lazy" >
+                </div>
+            </div>
+        </header>
+
+        <!-- PERFECT RIDE SECTION -->
+        <section class="perfect-ride">
+            <div class="container">
+                <div class="perfect-ride-text">
+                    <h2>Discover your perfect ride</h2>
+                    <p class="lead">Explore our Marketplace of High Quality Cars</p>
+                </div>
+                <!-- Cars Gallery -->
+                <div class="gallery-img">
+                    <img src="img/cullinan.jpg" alt="Rolls Royce Cullinan" id="current">
+                    <img src="img/bentley continent.jpg" alt="Bentley Continental">
+                    <img src="img/amg 43.jpg" alt="Mercedes AMG 43">
+                    <img src="img/armored-range-rover-sentinel-4-scaled.jpg" alt="Range Rover Sentinel">
+                    <img src="img/biography.webp" alt="Range Rover Velar">
+                    <img src="img/hilux.jpg" alt="Toyota Hilux">
+                    <img src="img/toyoya ch-r.jpg" alt="Toyota CHR">
+                    <img src="img/lexus es 300.jpg" alt="Lexus ES350">
+                    <img src="img/lexus.jpg" alt="Lexus IS250 F-Sport">
+                    <img src="img/Mercedes-EQ-Sedan-.jpg" alt="Mercedes-EQ-Sedan-">
+                </div>
+                <!-- see more -->
+                <div class="see-more">
+                    <a href="#" class="see-more-btn">see more</a>
+                </div>
+
+                <!-- gallery Modal -->
+                <div class="modal">
+                    <span class="close"><i class="fas fa-times fa-2x"></i></span>
+                    <div class="modal-content">
+                        <img src="" alt="" class="modal-img no-scroll">
+                        <span class="modal-text"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Perfect Ride Ends -->
+
+        <!-- Best services -->
+        <section class="best-services">
+            <div class="container">
+                <div class="best-services-text">
+                    <h2>We offer the best services in the region</h2>
+                    <p class="lead">Explore our marketplace of high quality cars.</p>
+                </div>
+                <!-- Cards -->
+                <div class="best-services-card">
+                    <div class="cards-1" data-aos="fade-left">
+                        <i class="fa-solid fa-car"></i>
+                        <h3>Wide Selection of Cars</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ut rerum aliquam sapiente, ex accusantium molestias autem ratione iusto alias laudantium voluptate, nostrum esse amet.</p>
+                    </div>
+                    <div class="cards-2" data-aos="fade-up">
+                        <i class="fa-sharp fa-solid fa-bookmark"></i>
+                        <h3>Seamless Bookings</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ut rerum aliquam sapiente, ex accusantium molestias autem ratione iusto alias laudantium voluptate, nostrum esse amet.</p>
+                    </div>
+                    <div class="cards-3" data-aos="fade-right">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <h3>Exception Customer Service</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ut rerum aliquam sapiente, ex accusantium molestias autem ratione iusto alias laudantium voluptate, nostrum esse amet.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Best Services Ends -->
+
+        <!-- Reviews -->
+        <section class="reviews">
+            <div class="container">
+                <div class="reviews-text">
+                    <p class="lead">Reviews</p>
+                    <h2>Happy Customers,Happy Journeys</h2>
+                </div>
+                <!-- Testimonials -->
+                <div class="testimonials" data-aos="fade-up">
+                    <div class="user">
+                        <div class="double-quote-left">
+                            <i class="fa-solid fa-quote-left fa-2x"></i>
+                        </div>
+                        <img src="" alt="" class="user-img" id="img">
+                        <h3 class="user-name" id="name"></h3>
+                        <h5 class="job" id="job"></h5>
+                        <div class="user-rating" id="rating">
+                        </div>
+                        <p class="user-text" id="text">
+                        </p>
+                        <div class="double-quote-right">
+                            <i class="fa-solid fa-quote-right fa-2x"></i>
+                        </div>    
+                    </div>
+                     <!-- Reviews button -->
+                     <button id="prev" class="prev-btn">
+                        <i class="fas fa-chevron-left fa-2x"></i>
+                    </button>
+                    <button id="next" class="next-btn">
+                        <i class="fas fa-chevron-right fa-2x"></i>
+                    </button>
+                </div>
+                </div>
+        </section>
+        <!-- Reviews End -->
+
+        <!-- partner -->
+        <section class="partner">   
+            <div class="container">
+                <div class="partner-text">
+                    <p class="lead">Partner</p>
+                    <h2>Strong Alliances:Trusted Partners</h2>
+                </div>
+
+                <!-- Partner Logo -->
+                <div class="partner-logo" data-aos="fade-down">
+                    <img src="img/merceds.png" alt="merceds">
+                    <img src="img/cooper.jpg" alt="cooper">
+                    <img src="img/ford.png" alt="ford">
+                    <img src="img/subaru.png" alt="subaru">
+                    <img src="img/tesla.png" alt="tesla">
+                    <img src="img/bmw.jpg" alt="BMW">
+                </div>
+            </div>
+        </section>
+        <!-- partner ends -->
+
+        <!-- inspiration -->
+        <section class="blog">
+            <div class="container">
+                <div class="blog-text">
+                    <p class="lead">Blog</p>
+                    <h2>Rev Up Your Travel Inspiration</h2>
+                </div>
+
+                <div class="blog-card">
+                    <div class="card">
+                        <!-- IMG -->
+                        <div class="img">
+                        <img src="img/lambo-aventador-chernaya.jpg" alt="Lambo">
+                        </div>
+                        <!-- INFO -->
+                        <div class="info">
+                        <h3>Top road trip destinations</h3>
+                        </div>
+                        <!-- DESCRIPTION -->
+                        <div class="description">
+                            <div class="expand-more-content" id="showMoreContent">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quisquam molestias consequunt neque esse beatae numquam consectetur.</p>
+                            </div>
+                        </div>
+                        <!-- SHOW MORE -->
+                        <div class="expand-more-holder">
+                            <span expand-more data-target="showMoreContent" data-hidetext="Show Less...." data-showtext="Show More...." class="show-more lead">....Show more</span>
+                        </div>
+                    </div>
+                    <!-- BLOG CARD 2 -->
+                    <div class="card" data-aos="fade-up">
+                        <!-- IMG -->
+                        <div class="img">
+                        <img src="img/car key.jpg" alt="Lambo">
+                        </div>
+                        <!-- INFO -->
+                        <div class="info">
+                        <h3>Top road trip destinations</h3>
+                        </div>
+                        <!-- DESCRIPTION -->
+                        <div class="description">
+                            <div class="expand-more-content" id="showMoreContent2">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quisquam molestias consequunt neque esse beatae numquam consectetur.</p>
+                            </div>
+                        </div>
+                        <!-- SHOW MORE -->
+                        <div class="expand-more-holder">
+                            <span expand-more data-target="showMoreContent2" data-hidetext="Show Less...." data-showtext="Show More...." class="show-more lead">....Show more</span>
+                        </div>
+                    </div>
+
+                    <!-- BLOG CARD 3 -->
+                    <div class="card" data-aos="fade-down">
+                        <!-- IMG -->
+                        <div class="img">
+                        <img src="img/lambo-back.jpg" alt="Lambo">
+                        </div>
+                        <!-- INFO -->
+                        <div class="info">
+                        <h3>Top road trip destinations</h3>
+                        </div>
+                        <!-- DESCRIPTION -->
+                        <div class="description">
+                            <div class="expand-more-content" id="showMoreContent3">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quisquam molestias consequunt neque esse beatae numquam consectetur.</p>
+                            </div>
+                        </div>
+                        <!-- SHOW MORE -->
+                        <div class="expand-more-holder">
+                            <span expand-more data-target="showMoreContent3" data-hidetext="Show Less...." data-showtext="Show More...." class="show-more lead">....Show more</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Inspiration Ends  -->
+
+        <!-- adventures -->
+        <section class="adventures">
+            <div class="container">
+                <div class="adventure-grid">
+                    <img src="img/tesla-1.jpg" alt="Tesla">
+                    <div class="adventure-text" data-aos="fade-up">
+                        <h2>Fueling Adventure,
+                             One Ride at a Time</h2>
+                        <p>Unlock unfogettable memories with our <br> 
+                            Premium Car Rental Services and hit the road in style
+                        </p>
+                        <a href="#" class="adventure-btn">Read more</a>
+                    </div>
+                    <img src="img/tesla-1.jpg" alt="Tesla">
+                </div>
+            </div>
+        </section>
+        <!-- Adventure Ends -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Footer contact -->
+              <div class="footer-contact">
+                <a href="mailto:alabifathiu@yahoo.com">alabifathiu@yahoo.com</a>
+              
+                <p>&copy; Abolore 2023</p>
+                <div class="footer-socials">
+                    <ul>
+                        <li><a href="https://www.twitter.com/abolorreeeee" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="https://www.github.com/AboloreDev" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                        <li> <a href="https://wa.me/9076862727" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+              </div>
+                <!-- Footer contact ends  -->
+                <!-- footer address starts -->
+                <div class="footer-address">
+                    <h3>Head Office</h3>
+                    <address>
+                        112 Boulevard St, <br>
+                        Texas, 23063 <br>
+                        USA
+                    </address>
+                </div>
+                <!-- Footer address ends -->
+                <div class="company">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Join Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="product">
+                    <h3>Our Product</h3>
+                    <ul>
+                        <li>Business Account</li>
+                        <li>POS Referrals</li>
+                        <li>Expense Cards</li>
+                        <li>Working Capital Loans</li>
+                        <li>Payment Gateway</li>
+                    </ul>
+                </div>
+                <div class="resources">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li>Help Center</li>
+                        <li>Learning Center</li>
+                        <li>Withdrawal Policy</li>
+                        <li>Privacy Policy</li>
+                        <li>Cookie Policy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="attribution" >
+            <p>Created by<a href="https://www.github.com/AboloreDev">Alabi Fathiu</a></p>
+        </div>
+    </footer>
+</body>
+<script src="main.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset:400,
+    duration:2000,
+    easing: 'ease-in'
+  });
+</script>
+</html>

@@ -1,0 +1,875 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+/* CSS Reset */
+*, 
+::after,
+::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* variables */
+:root {
+    --Primary-Color: #000;
+    --logo-color: #413f3f;
+    --ff-primary: 'Roboto Condensed', sans-serif;;
+    --ff-secondary: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    --secondary-color: #666;
+    --form-text-color: #ccc;
+}
+
+/* General Styles */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: var(--ff-primary);
+    line-height: 1.5;
+    font-size: 18px;
+    color: var(--Primary-Color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--Primary-Color);
+}
+
+li{
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+/* Utility Classes */
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* BTN's */
+.btn-light {
+    background-color: transparent;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.btn-dark {
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.btn-light:hover {
+    background-color: black;
+    color: #fff;
+    border: none
+}
+
+.btn-dark:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+/* Header */
+
+.header {
+    background-color: azure;
+    height: auto;
+}
+
+/* NAVBAR */
+.nav {
+    width: 100%;
+    height: 70px;
+}
+
+/* Logo */
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nav-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+}
+
+.first-li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.second-li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-li li,
+.second-li li {
+    margin: 0 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.first-li li a:hover {
+    color: #666;
+} 
+
+/* Mobile-Menu */ 
+.mobile-menu {
+    background-color: azure;
+    color: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    width: 50%;
+    height: 100%;
+    transition: all 0.4s ease-in-out;
+    opacity: 0.9;
+}
+
+.hidden {
+    transform: translateX(100%);
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.car-links {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+}
+
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.car-links a,
+.sign-up a {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.car-links li,
+.sign-up li {
+    margin: 10px 0;
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    display: block;
+}
+
+/* Hamburger-Btn */
+.hamburger{
+    display: none;
+}
+
+.hamburger i {
+    font-size: 25px;
+}
+
+/* nav ends */
+/* hero */
+.hero {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero-text {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-text span.premium {
+    color: rgb(0, 98, 255);
+}
+
+/* hero image */
+.hero-img {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/* Hero Ends */
+
+/* PERFECT RIDE SECTION */
+.perfect-ride {
+    margin-top: 50px;
+    padding: 5px 10px;
+}
+
+.perfect-ride-text {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.perfect-ride-text h2 {
+    font-size: 35px;
+    color: black;
+}
+
+ .lead {
+    color: var(--form-text-color);
+}
+
+/* Gallery */
+.gallery-img {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+}
+
+.gallery-img img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.gallery-img img:hover {
+    transform: scale(0.9);
+    transition: transform 0.4s ease-in-out;
+}
+
+/* Gallery MOdal */
+.modal {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: hsla(0, 0%, 0%, 0.913);
+    color: #fff;
+    z-index: 1;
+    overflow: auto;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-content {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal-img {
+    width: 80%;
+    max-width: 600px;
+}
+
+.modal-text {
+    margin-top: 1rem;
+}
+
+.close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.modal.show-img {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal.show-img .modal-img,
+.modal.show-img .modal-text {
+    animation: 0.5s zoom linear;
+}
+/* Animations KeyFrames form image Modal  */
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* see more */
+.see-more {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.see-more-btn {
+    background-color: transparent;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    padding: 0px 20px;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+.see-more-btn:hover {
+    background-color: #666;
+    color: #fff;
+}
+
+/* Perfect ride ends */
+
+/* Best services */
+.best-services {
+    margin-top: 80px;
+    padding: 5px 10px;
+}
+
+.best-services-text {
+    text-align: center;
+    margin: 0 30px;
+}
+
+.best-services-text h2 {
+    font-size: 35px;
+}
+
+/* Cards */
+.best-services-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    text-align: center;
+}
+
+.cards-1 {
+    margin: 10px 20px;
+    background-color: rgba(248, 196, 196, 0.559);
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.cards-1:hover,
+.cards-2:hover,
+.cards-3:hover {
+    transform: translateY(30px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.cards-2 {
+    margin: 10px 20px;
+    background-color: rgb(210, 243, 210);
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+.cards-3 {
+    margin: 10px 20px;
+    background-color: rgb(209, 209, 246);
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.cards-1 i,
+.cards-2 i,
+.cards-3 i {
+    margin-bottom: 20px;
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 50%;
+    color: #666;
+}
+
+.cards-1 p,
+.cards-2 p,
+.cards-3 p {
+    margin-top: 10px;
+    color: #666;
+}
+
+/* reviews */
+.reviews {
+    margin-top: 80px;
+}
+
+.reviews-text {
+    text-align: center;
+    margin: 10px 0px;
+}
+
+/* Testimonials */
+.testimonials {
+    text-align: center;
+    position: relative;
+}
+
+.testimonials .user {
+    background-color: rgb(0, 132, 214);
+    padding: 20px 0;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: slide 0.4s linear;
+}
+
+
+/* Keyframes for slide reviews */
+@keyframes slide {
+    0% {
+        transform: rotateX(180deg);
+    }
+}
+
+.testimonials .slide-in {
+    animation: slideIn 0.4s ease-in-out;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.user .user-img {
+    width: 20%;
+    height: 5%;
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px 10px rgb(29, 22, 22);
+    margin-bottom: 20px;
+}
+
+.user .user-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gold;
+    font-size: 30px;
+}
+
+.user .user-text {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+/* Double Quotes */
+.double-quote-left {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 10%;
+}
+
+.double-quote-right {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-right: 10%;
+    padding: 10px;
+}
+
+.double-quote-left i ,
+.double-quote-right {
+    color: #ccc;
+}
+/* Reviews Button */
+.testimonials .prev-btn,
+.testimonials .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 20px;
+    padding: 5px;
+    background: transparent;
+    cursor: pointer;
+    margin: 0 10px;
+    box-shadow: 0 5px 10px black;
+}
+
+.testimonials .prev-btn{
+    left: -5px;
+}
+
+.testimonials .next-btn {
+    right: 5px;
+}
+
+.testimonials .prev-btn:hover,
+.testimonials .next-btn:hover {
+    background-color: #ccc;
+} 
+/* Testimonials end */
+
+/* Partner */
+.partner {
+    margin-top: 80px;
+}
+
+.partner-text {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.partner-logo img {
+    width: 100px;
+}
+
+.partner-logo img:hover {
+    transform: scale(1.2);
+    transition: all 0.5s ease-in-out;
+}
+
+.partner-logo {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Blog section */
+.blog {
+    margin-top: 100px;
+}
+
+.blog-text {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.blog-card  {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.card img {
+    width: 250px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow:  5px 5px 5px 5px #ccc;
+    padding: 0 5px;
+}
+
+.img {
+    margin-bottom: 10px;
+}
+
+.expand-more-content{
+    height: 20px;
+    margin-top: 15px;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+    position: relative;
+}
+
+.expand-more-content.expand-active {
+    height: auto;
+    transition: height 0.5s ease-in-out;
+}
+
+.expand-more-holder {
+    padding: 15px 0;
+    text-align: center;
+}
+
+.show-more {
+    cursor: pointer;
+}
+
+/* Blog Ends */
+
+/* Adventure starts */
+.adventures {
+    margin-top: 150px;
+}
+
+.adventure-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 20px 20px;
+    background-color: rgb(0, 118, 253);
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+.adventure-grid img {
+    width: 200px;
+    display: flex;
+    align-self: flex-end;
+    border-radius: 10px;
+}
+
+.adventure-text {
+    text-align: center;
+    color: #fff;
+}
+
+.adventure-text h2 {
+    margin-bottom: 10px;
+}
+
+.adventure-text p {
+    margin-bottom: 20px;
+}
+
+.adventure-btn {
+    background-color: white;
+    color: black;
+    padding: 5px 15px ;
+    font-size: 15px;
+}
+/* Adventure ends */
+/* footer begins */
+.footer {
+    margin-top: 20px;
+    background-color: black;
+    padding: 10px;
+}
+
+.footer-grid  {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+    padding: 0 20px;
+    color: #c4c4c4;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.footer-contact a {
+    color: #c4c4c4;
+}
+
+.footer-socials ul {
+    display: flex;
+    margin-top: 10px;
+    align-items: flex-start;
+}
+
+.footer-socials li {
+    margin-left: 10px;
+}
+
+.company a {
+    color: #c4c4c4;
+}
+/* footer ends */
+
+/* Attribution */
+.attribution {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.attribution a {
+    color: #fff;
+}
+
+
+/* MEDIIA QUERIES */
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .hamburger {
+        display: block;
+        z-index: 1;
+    }
+
+    .first-li,
+    .second-li {
+        display: none;
+    }
+
+    .perfect-ride-text h2 {
+        font-size: 25px;
+    }
+
+    .perfect-ride-text p {
+        font-size: 15px;
+    }
+
+    .best-services-card {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .best-services-text h2 {
+        font-size: 25px;
+    }
+
+    .best-services-text p {
+        font-size: 15px;
+    }
+
+    .hero-text {
+        font-size: 20px;
+    }
+
+    .reviews-text h2 {
+        font-size: 20px;
+    }
+    
+    .user-text{
+        font-size: 18px;
+    }
+
+    .blog-card {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .adventure-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        place-content: center;
+        gap:20px ;
+    }
+
+    .adventure-grid img {
+        justify-self: center;
+    }
+
+    .footer-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .footer-socials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 550px ){
+    .hero-text {
+        font-size: 20px;
+    }
+
+    .perfect-ride-text h2 {
+        font-size: 25px;
+    }
+
+    .perfect-ride-text p {
+        font-size: 15px;
+    }
+
+    .gallery-img {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .best-services-text h2 {
+        font-size: 25px;
+    }
+
+    .best-services-text p {
+        font-size: 15px;
+    }
+
+    .best-services-card {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .reviews-text h2 {
+        font-size: 20px;
+    }
+    
+    .user-text{
+        font-size: 18px;
+    }
+
+
+    .testimonial-cards-text h2{
+        font-size: 13px;
+    }
+
+    .testimonial-cards-text p {
+        font-size: 10px;
+    }
+
+    .partner-text h2 {
+        font-size: 20px;
+    }
+
+    .partner-logo {
+        align-items: center;
+        padding: 0 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-content: center;
+        margin: 0 auto;
+    }
+
+    .blog-text h2 {
+        font-size: 20px;
+    }
+
+    .blog-card {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .adventure-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+        text-align: center;
+    }
+
+    .adventure-grid img {
+        justify-self: center;
+    }
+
+    .adventure-text h2 {
+        font-size: 20px;
+    }
+
+    .adventure-text p {
+        font-size: 15px;
+    }
+
+}
